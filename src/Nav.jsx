@@ -1,3 +1,3 @@
 export default function Nav ()  {
-    return <>Nav</>;
+    return <nav>Nav</nav>;
 }
