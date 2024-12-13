@@ -1,3 +1,3 @@
 export default function () {
-    return <header>Header</header>
+    return <header><img src="/Logo.svg"/></header>
 }
