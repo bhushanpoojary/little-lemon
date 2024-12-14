@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-    <div class="container">
+    <div className="container">
         <Router>
           <Header/>
           <Nav/>

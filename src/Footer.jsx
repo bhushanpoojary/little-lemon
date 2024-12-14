@@ -1,7 +1,7 @@
 import "./Footer.css"
 const Footer = () => {
     return <footer>
-         <section class="container-footer">
+         <section className="container-footer">
             <div>
                 <img src="/small_logo.png" width={100}/>
             </div>
