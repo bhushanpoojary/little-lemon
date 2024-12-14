@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const BookingForm = (props) => {
-  console.log(props);
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState("");
@@ -9,6 +8,7 @@ const BookingForm = (props) => {
    
   const handleChange = (e) => {
     setDate(e);
+    props.updateTimes(e);
   }  
   return (
     <form style={{ display: "grid", maxWidth: "200px", gap: "20px" }}>
