@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-const BookingForm = () => {
+const BookingForm = (props) => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState("");
   const [occasion, setOccasion] = useState("");
-  const [availableTimes, setAvailableTimes] = useState(["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"])  
+   
   const handleChange = (e) => {
     setDate(e);
   }  
@@ -15,7 +15,7 @@ const BookingForm = () => {
       <input type="date" id="res-date" value={date} onChange={(e)=> handleChange(e.target.value)}/>
       <label htmlFor="res-time">Choose time</label>
       <select id="res-time" value={time} onChange={(e) => setTime(e.target.value)}>
-        {availableTimes.map(time => <option key={time}>{time}</option>)}
+        {props.availableTimes.map(time => <option key={time}>{time}</option>)}
       </select>
       <label htmlFor="guests">Number of guests</label>
       <input type="number" placeholder="1" min="1" max="10" id="guests" value={guests} onChange={(e) => setGuests(e.target.value)}/>
