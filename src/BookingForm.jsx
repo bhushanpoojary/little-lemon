@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const BookingForm = (props) => {
+  const navigate = useNavigate();
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState("");
@@ -10,8 +12,19 @@ const BookingForm = (props) => {
     setDate(e);
     props.updateTimes(e);
   }  
+
+  const HandleSumbit = (e) => {
+    //let navigate = useNavigate();
+    e.preventDefault();
+    if(props.submitAPI(e))
+    {
+      navigate('/booking-confirmed');
+    }
+      
+    };
+
   return (
-    <form style={{ display: "grid", maxWidth: "200px", gap: "20px" }}>
+    <form style={{ display: "grid", maxWidth: "200px", gap: "20px" }} onSubmit={HandleSumbit}>
       <label htmlFor="res-date">Choose date</label>
       <input type="date" id="res-date" value={date} onChange={(e)=> handleChange(e.target.value)}/>
       <label htmlFor="res-time">Choose time</label>

@@ -3,6 +3,7 @@ import Home from "./Home"
 import BookingPage from "./BookingPage"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useReducer } from "react";
+import ConfirmedBooking from "./ConfirmedBooking";
 
 
 
@@ -48,7 +49,8 @@ export default function Main() {
     return <main>
             <Routes>
                 <Route path="/" element={<Home />}></Route>
-                <Route path="/booking" element={<BookingPage availableTimes={state} updateTimes={dispatch}/>}></Route>
+                <Route path="/booking" element={<BookingPage availableTimes={state} updateTimes={dispatch} submitAPI={submitAPI}/>}></Route>
+                <Route path="/booking-confirmed" element={<ConfirmedBooking/>}></Route>
             </Routes>
     </main>
 }

@@ -15,7 +15,7 @@ export default function Nav ()  {
               <Link to="/menu">Menu</Link>
             </li>
             <li>
-              <Link to="/booking">Reservation</Link>
+              <Link to="/booking">Booking</Link>
             </li>
             <li>
               <Link to="/order-online">Order Online</Link>
