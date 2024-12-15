@@ -94,7 +94,7 @@ const BookingForm = (props) => {
       </select>
       {formik.errors.occasion && <div style={{ color: "red" }}>{formik.errors.occasion}</div>}
 
-      <input type="submit" id="btnReservation" aria-label="On Click" value="Make Your reservation" disabled={!formik.isValid || !formik.dirty} />
+      <input type="submit" id="btnReservation" aria-label="On Click" value="Make Your Reservation" disabled={!formik.isValid || !formik.dirty} />
     </form>
   );
 };

@@ -1,6 +1,6 @@
 const Chicago = ()=> {
     return <>
-        <h1>Chicago</h1>
+        <h3 style={{color: "white", marginTop: "30px", textAlign: "left"}}>Chicago</h3>
     </>
 }
 

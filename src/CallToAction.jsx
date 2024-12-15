@@ -1,6 +1,6 @@
 const CallToAction = () => {
     return <>
-        <h1>Call to Action</h1>
+        <h1 style={{color: "#edc913"}}>Little Lemmon</h1>
     </>
 }
 

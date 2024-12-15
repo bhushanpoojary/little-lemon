@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const CustomerSay = ()=> {
     return <>
-    <h1>Customer Say</h1>
+    <Link to="/booking"><button aria-label="On Click" style={{backgroundColor: "#edc913", marginBottom: "30px"}}>Reserve Table</button></Link>
     </>
 }
 

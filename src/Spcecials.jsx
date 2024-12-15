@@ -1,6 +1,6 @@
 const Specials = ()=> {
     return <>
-        <h1>Specials</h1>
+        <p style={{color: "white"}}>We are a family owned Mediterraneran restaurant, focused on traditional recipes servred with a modern twist.</p>
     </>
 }
 
