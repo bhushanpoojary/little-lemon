@@ -1,5 +1,6 @@
 import { useFormik } from "formik";
 import { useNavigate } from "react-router-dom";
+import "./BookingForm.css"
 
 const BookingForm = (props) => {
   const navigate = useNavigate();
@@ -93,7 +94,7 @@ const BookingForm = (props) => {
       </select>
       {formik.errors.occasion && <div style={{ color: "red" }}>{formik.errors.occasion}</div>}
 
-      <input type="submit" aria-label="On Click" value="Make Your reservation" disabled={!formik.isValid || !formik.dirty} />
+      <input type="submit" id="btnReservation" aria-label="On Click" value="Make Your reservation" disabled={!formik.isValid || !formik.dirty} />
     </form>
   );
 };
